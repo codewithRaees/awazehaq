@@ -4,8 +4,13 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-                     sans: ['"Open Sans"', 'sans-serif'], // Add Open Sans to the default sans family
-                   },
+        sans: ['"Open Sans"', 'sans-serif'],
+      },
+      screens: {
+        'custom-md': '932px', // Define a custom breakpoint at 930px
+      },
+     
+    
     },
   },
   plugins: [],
