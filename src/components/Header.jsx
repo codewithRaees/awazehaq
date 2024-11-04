@@ -45,21 +45,21 @@ const Header = () => {
         <div className="logo"><img src={logo}  className='h-20 w-20'/></div>
                 <div className=" header-left flex justify-around items-center gap-5">
                     <nav className='hidden custom-md:block'>
-        <ul className="flex justify-around gap-2 text-[#333333] text-[14px]">
-         <li  className='hover:bg-[#676838] hover:text-white rounded-full px-3 py-2'>Home</li>
-          <li className='hover:bg-[#676838] hover:text-white rounded-full px-3 py-2'>About</li>
-          <li className='hover:bg-[#676838] hover:text-white rounded-full px-3 py-2'>Our Approach</li>
-          <li className='hover:bg-[#676838] hover:text-white rounded-full px-3 py-2'>Gallery </li>
-          <li className='hover:bg-[#676838] hover:text-white rounded-full px-3 py-2'>On Going Project </li>
-          <li className='hover:bg-[#676838] hover:text-white rounded-full px-3 py-2'>Volunteer</li>
-          <li className='hover:bg-[#676838] hover:text-white rounded-full px-3 py-2'>Media</li>
+        <ul className="flex justify-around gap-2 text-[#333333] text-[14px] font-semibold">
+         <li  className='hover:bg-[#676838] hover:text-white rounded-full px-3 py-2  transition-all duration-500 ease-in-out'>Home</li>
+          <li className='hover:bg-[#676838] hover:text-white rounded-full px-3 py-2 transition-all duration-500 ease-in-out'>About</li>
+          <li className='hover:bg-[#676838] hover:text-white rounded-full px-3 py-2 transition-all duration-500 ease-in-out'>Our Approach</li>
+          <li className='hover:bg-[#676838] hover:text-white rounded-full px-3 py-2 transition-all duration-500 ease-in-out'>Gallery </li>
+          <li className='hover:bg-[#676838] hover:text-white rounded-full px-3 py-2 transition-all duration-500 ease-in-out'>On Going Project </li>
+          <li className='hover:bg-[#676838] hover:text-white rounded-full px-3 py-2 transition-all duration-500 ease-in-out'>Volunteer</li>
+          <li className='hover:bg-[#676838] hover:text-white rounded-full px-3 py-2 transition-all duration-500 ease-in-out'>Media</li>
         </ul>
                 </nav>
                 <BlinkingButton style={{ lineHeight: '23px' }} className='bg-[#676838]  font-sans rounded-full font-semibold px-4 py-3 text-white'>
        Donate Now!
             </BlinkingButton>
              <div className="relative">
-            <button onClick={toggleMenu} className=" block md:hidden p-4 text-3xl  text-[#6d6d23] rounded">
+            <button onClick={toggleMenu} className=" block custom-md:hidden p-4 text-3xl  text-[#6d6d23] rounded">
                 ☰
             </button>
             <HamburgerMenu isOpen={isOpen} onClose={toggleMenu} />

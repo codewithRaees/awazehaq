@@ -1,4 +1,5 @@
 import Header from "./components/Header"
+import SocialLinksStrip from "./components/SocialLinksStrip"
 
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
 
   return (
     <>
+      <SocialLinksStrip/>
       <Header/>
     </>
   )
