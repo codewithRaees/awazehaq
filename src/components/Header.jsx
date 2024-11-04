@@ -42,8 +42,8 @@ const Header = () => {
     return (
         <div className="w-full shadow-lg">
             <header className="flex  justify-between h-24 items-center px-3  ">
-        <div className="logo"><img src={logo}  className='h-20 w-20'/></div>
-                <div className=" header-left flex justify-around items-center gap-5">
+        <div className="logo"><span className='block text-xl font-bold text-[#676838] sm:hidden'>Awaz-e-Haq Foundation</span><img src={logo}  className='h-20 w-20 hidden sm:block'/></div>
+                <div className=" header-left flex justify-around items-center sm:gap-5">
                     <nav className='hidden custom-md:block'>
         <ul className="flex justify-around gap-2 text-[#333333] text-[14px] font-semibold">
          <li  className='hover:bg-[#676838] hover:text-white rounded-full px-3 py-2  transition-all duration-500 ease-in-out'>Home</li>
@@ -55,7 +55,7 @@ const Header = () => {
           <li className='hover:bg-[#676838] hover:text-white rounded-full px-3 py-2 transition-all duration-500 ease-in-out'>Media</li>
         </ul>
                 </nav>
-                <BlinkingButton style={{ lineHeight: '23px' }} className='bg-[#676838]  font-sans rounded-full font-semibold px-4 py-3 text-white'>
+                <BlinkingButton style={{ lineHeight: '23px' }} className='bg-[#676838]  font-sans rounded-full sm:font-semibold px-4 py-3 text-white'>
        Donate Now!
             </BlinkingButton>
              <div className="relative">
