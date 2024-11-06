@@ -16,7 +16,7 @@ const blinkAnimation = keyframes`
 
 // Create a styled button with the blinking effect
 const BlinkingButton = styled.button`
-  padding: 10px 20px;
+  
   font-size: 16px;
   color: white;
   background-color: #3498db;
@@ -41,7 +41,7 @@ const Header = () => {
     };
     return (
         <div className="w-full shadow-lg">
-            <header className="flex  justify-between h-24 items-center px-3  ">
+            <header className="flex  justify-between sm:h-24 h-16 items-center px-3  ">
         <div className="logo"><span className='block text-xl font-bold text-[#676838] sm:hidden'>Awaz-e-Haq Foundation</span><img src={logo}  className='h-20 w-20 hidden sm:block'/></div>
                 <div className=" header-left flex justify-around items-center sm:gap-5">
                     <nav className='hidden custom-md:block'>
@@ -55,11 +55,12 @@ const Header = () => {
           <li className='hover:bg-[#676838] hover:text-white rounded-full px-3 py-2 transition-all duration-500 ease-in-out'>Media</li>
         </ul>
                 </nav>
-                <BlinkingButton style={{ lineHeight: '23px' }} className='bg-[#676838]  font-sans rounded-full sm:font-semibold px-4 py-3 text-white'>
-       Donate Now!
+                <BlinkingButton style={{ lineHeight: '23px' }} className='bg-[#676838] flex gap-1 px-3 py-1 sm:py-3  font-sans rounded-full sm:font-semibold   text-white'>
+      <span className='text-[14px] sm:text-[16px]'> Donate</span> <span className='hidden sm:block'>Now!</span>
             </BlinkingButton>
              <div className="relative">
-            <button onClick={toggleMenu} className=" block custom-md:hidden p-4 text-3xl  text-[#6d6d23] rounded">
+              
+            <button onClick={toggleMenu} className=" block custom-md:hidden pl-2 sm:pl-4 text-3xl  text-[#6d6d23] rounded">
                 ☰
             </button>
             <HamburgerMenu isOpen={isOpen} onClose={toggleMenu} />
