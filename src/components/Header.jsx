@@ -1,6 +1,6 @@
 import logo from '../assets/logo.jpeg';
 // src/App.js
-import React, { useState } from "react";
+import React, { act, useState } from "react";
 import styled, { keyframes } from "styled-components";
 import HamburgerMenu from './HamburgerMenu';
 
@@ -33,12 +33,18 @@ const BlinkingButton = styled.button`
 
   
 
-const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
+const Header = ({navLinks}) => {
+const [activeLink, setActiveLink] = useState('Home');
+ 
+   const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
-    };
+  };
+   // Function to handle link clicks and set the active link
+  const handleLinkClick = (link) => {
+    setActiveLink(link);
+  };
     return (
         <div className="w-full shadow-lg">
             <header className="flex  justify-between sm:h-24 h-16 items-center px-3  ">
@@ -46,14 +52,13 @@ const Header = () => {
                 <div className=" header-left flex justify-around items-center sm:gap-5">
                     <nav className='hidden custom-md:block'>
         <ul className="flex justify-around gap-2 text-[#333333] text-[14px] font-semibold">
-         <li  className='hover:bg-[#676838] hover:text-white rounded-full px-3 py-2  transition-all duration-500 ease-in-out'>Home</li>
-          <li className='hover:bg-[#676838] hover:text-white rounded-full px-3 py-2 transition-all duration-500 ease-in-out'>About</li>
-          <li className='hover:bg-[#676838] hover:text-white rounded-full px-3 py-2 transition-all duration-500 ease-in-out'>Our Approach</li>
-          <li className='hover:bg-[#676838] hover:text-white rounded-full px-3 py-2 transition-all duration-500 ease-in-out'>Gallery </li>
-          <li className='hover:bg-[#676838] hover:text-white rounded-full px-3 py-2 transition-all duration-500 ease-in-out'>On Going Project </li>
-          <li className='hover:bg-[#676838] hover:text-white rounded-full px-3 py-2 transition-all duration-500 ease-in-out'>Volunteer</li>
-          <li className='hover:bg-[#676838] hover:text-white rounded-full px-3 py-2 transition-all duration-500 ease-in-out'>Media</li>
-        </ul>
+                {
+                  navLinks.map((link, i) => (
+                    <li key={i} onClick={() => handleLinkClick(link)} className={`hover:bg-[#676838] hover:text-white rounded-full px-3 py-2  transition-all duration-300 ease-in-out `}><a href='#' className={`${activeLink === link ? 'border-b-4 border-[#676838]' : ''}`} >{link}</a></li>
+           
+                  ))
+          }
+                      </ul>
                 </nav>
                 <BlinkingButton style={{ lineHeight: '23px' }} className='bg-[#676838] flex gap-1 px-3 py-1 sm:py-3  font-sans rounded-full sm:font-semibold   text-white'>
       <span className='text-[14px] sm:text-[16px]'> Donate</span> <span className='hidden sm:block'>Now!</span>
