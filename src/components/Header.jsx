@@ -46,9 +46,12 @@ const [activeLink, setActiveLink] = useState('Home');
     setActiveLink(link);
   };
     return (
-        <div className="w-full shadow-lg">
+        <div className="w-full shadow-lg ">
             <header className="flex  justify-between sm:h-24 h-16 items-center px-3  ">
-        <div className="logo"><span className='block text-xl font-bold text-[#676838] sm:hidden'>Awaz-e-Haq Foundation</span><img src={logo}  className='h-20 w-20 hidden sm:block'/></div>
+          <div className="logo flex items-center gap-4">
+            <img src={logo} className='h-20 w-20 hidden sm:block' />
+            <span className='block text-xl font-bold text-[#676838] '>Awaz-e-Haq <br></br>Foundation</span>
+          </div>
                 <div className=" header-left flex justify-around items-center sm:gap-5">
                     <nav className='hidden custom-md:block'>
         <ul className="flex justify-around gap-2 text-[#333333] text-[14px] font-semibold">

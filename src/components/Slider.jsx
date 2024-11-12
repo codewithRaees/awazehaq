@@ -1,13 +1,14 @@
 // src/components/Slider.js
 import React, { useState, useEffect } from "react";
 import { GrNext,GrPrevious } from "react-icons/gr";
-import s1 from '../assets/1.jpg';
-import s2 from '../assets/2.jpeg';
-import s6 from '../assets/6.jpg';
-import n1 from '../assets/n1.jpg';
+import s1 from '../assets/1.png';
+import s2 from '../assets/2.png';
+import s3 from '../assets/3.png';
+import s4 from '../assets/4.png';
+
 // Sample images (replace with your images)
 const images = [
-  s1,n1,s1,s2,s6
+  s1,s2,s3,s4
 ];
 
 const Slider = () => {
