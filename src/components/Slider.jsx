@@ -1,14 +1,11 @@
 // src/components/Slider.js
 import React, { useState, useEffect } from "react";
 import { GrNext,GrPrevious } from "react-icons/gr";
-import s1 from '../assets/1.png';
-import s2 from '../assets/2.png';
-import s3 from '../assets/3.png';
-import s4 from '../assets/4.png';
+
 
 // Sample images (replace with your images)
 const images = [
-  s1,s2,s3,s4
+  //s1,s2,s3,s4
 ];
 
 const Slider = () => {
@@ -37,14 +34,14 @@ const Slider = () => {
   };
 
   return (
-    <div className=" w-full  mx-auto overflow-hidden">
+    <div className=" w-full  mx-auto overflow-hidden ">
       {/* Slider Slides */}
-      <div className=" rounded-lg shadow-lg">
-        <div className="relative   overflow-hidden  ">
+      <div className=" rounded-lg shadow-lg ">
+        <div className="relative   overflow-hidden ">
           <img
             src={images[currentIndex]}
             alt={`Slide ${currentIndex + 1}`}
-            className=" w-screen max-h-92 object-cover transition-all duration-1000 ease-in-out opacity-100"
+            className=" w-screen max-h-92 object-cover transition-all duration-500 ease-in-out opacity-100 "
           />
            {/* Previous Button */}
       <button

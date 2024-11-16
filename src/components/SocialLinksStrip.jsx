@@ -5,9 +5,17 @@ import { MdEmail } from "react-icons/md";
 import { BsWhatsapp } from "react-icons/bs";
 const SocialLinksStrip = () => {
   return (
-      <div className=' sticky top-0 z-20 w-full bg-[#676838] h-12 flex justify-between px-5 sm:px-10 items-center'>
-          <div className="left text-white text-2xl flex gap-3 sm:gap-6"><FaFacebookF/><FaTiktok/><TfiYoutube/></div>
-          <div className="right flex text-white items-center gap-10 text-[14px]">
+      <div className='  w-full bg-[#676838] h-14 flex justify-between px-5 sm:px-10 items-center relative'>
+      <div className="left text-white justify-center items-center flex gap-3 sm:gap-6">
+        <span>Follow Us:</span>
+        <div className="link text-[18px]"><ul className="flex gap-4 items-center justify-center">
+          <li className=" w-10 h-10 rounded-full  items-center flex justify-center border border-white"><a href="#"><FaFacebookF /></a></li>
+           <li className=" w-10 h-10 rounded-full  items-center flex justify-center border border-white"><a href="#">  <FaTiktok /></a> </li>
+          <li className=" w-10 h-10 rounded-full   items-center flex justify-center border border-white"> <a href="#"><TfiYoutube /></a></li>
+        </ul></div>
+     </div>
+      <div className="right flex text-white items-center gap-10 text-[14px]">
+        
               <div className="hidden sm:block ">
                   <div className="email flex  items-center gap-2"><MdEmail/><span>example@gmail.com</span></div>
               </div>
