@@ -1,22 +1,19 @@
 import React, { useState, useEffect } from 'react';
-import s1 from '../assets/s1.png';
-import s2 from '../assets/s2.jpeg';
-import s3 from '../assets/s3.png';
 
 const Test = () => {
   const slides = [
     {
-      image: s1,
+      image: '/assets/s1.png',
       heading: 'Improve Rural Education',
           paragraph: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, corporis natus nisi possimus harum magnam similique, fugit dolore explicabo debitis et! Modi ad minus placeat excepturi, fugiat labore alias ipsum.',
     },
     {
-      image: s2,
+      image: '/assets/s2.jpeg',
       heading: 'Heading 2',
       paragraph: 'This is the description for the second slide.',
     },
     {
-      image: s3,
+      image: '/assets/s3.png',
       heading: 'Heading 3',
       paragraph: 'This is the description for the third slide.',
     },

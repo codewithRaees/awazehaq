@@ -1,4 +1,4 @@
-import logo from '../assets/logo.jpeg';
+import logo from '/assets/logo.jpeg';
 // src/App.js
 import React, { act, useState } from "react";
 import styled, { keyframes } from "styled-components";
