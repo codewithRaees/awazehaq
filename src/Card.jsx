@@ -5,7 +5,7 @@ const Card = () => {
     {
       id: 1,
       image: '/assets/s1.png',
-      heading: 'Education',
+      heading: 'Education ',
       text: 'This is a short description of the card content. It gives a brief overview of the topic.',
       link: '/read-more', // Replace with your target URL
     },
@@ -51,7 +51,7 @@ const Card = () => {
               {/* Read More Button */}
               <a
                 href={card.link}
-                className="inline-block px-4 py-2 text-[#20200a]  bg-[#e3e31d] hover:bg-blue-600 rounded-full transition"
+                className="inline-block px-4 py-2 text-[#20200a]  bg-[#33d664] hover:bg-blue-600 rounded-full transition"
               >
                 Read More
               </a>
