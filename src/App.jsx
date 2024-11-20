@@ -1,8 +1,9 @@
 import { useState } from "react"
 import Header from "./components/Header"
-import Slider from "./components/Slider"
 import SocialLinksStrip from "./components/SocialLinksStrip"
-import Test from "./components/Test"
+import CarousalSlider from "./components/CarousalSlider"
+import Card from "./Card"
+import TestCard from "./components/TestCard"
 
 
 function App() {
@@ -15,7 +16,9 @@ const [navLinks , setnavLinks]=useState(['Home', 'About', 'Our Approach', 'Galle
      
          <Header navLinks={ navLinks} />
       {/* <Slider /> */}
-  <Test />
+      <CarousalSlider />
+      <Card/>
+      
     </>
   )
 }
