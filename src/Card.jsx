@@ -28,9 +28,9 @@ const Card = () => {
 
   return (
     <div className="relative flex items-center justify-center ">
-
+        <div className='h-44'></div>
       {/* Cards */}
-      <div className="sm:absolute w-auto  bottom-0    transform   m-auto px-10   sm:translate-y-3/4     grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div className="sm:absolute w-auto  bottom-0    transform   m-auto px-10        grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
         {cardData.map((card) => (
           <div
             key={card.id}
@@ -59,8 +59,11 @@ const Card = () => {
           </div>
         ))}
       </div>
+       
     </div>
+    
   );
+  
 };
 
 export default Card;
