@@ -54,7 +54,7 @@ const CarousalSlider = () => {
   return (
     <div className="relative w-full overflow-hidden max-h-52 sm:max-h-screen mb-4 sm:mb-0">
       <div
-        className="flex transition-transform duration-700 ease-in-out"
+        className="flex transition-transform - duration-1000 ease-in-out"
         style={{
           transform: `translateX(-${currentIndex * 100}%)`,
         }}
@@ -71,7 +71,7 @@ const CarousalSlider = () => {
 
             {/* Overlay text */}
             <div className="absolute top-1/4 left-14 max-w-[300px] md:max-w-[600px]  transform md:-translate-y-1/2 text-white ">
-              <h2 className="text-xl md:text-4xl font-bold mb-2 bg-[#676838] bg-opacity-60 md:p-4 p-2 pl-4 rounded-full">
+              <h2 className="text-xl  md:text-4xl font-bold mb-2 bg-[#676838] bg-opacity-60 md:p-4 p-2 pl-4 rounded-full">
                 {slide.heading}
               </h2>
               <p className="text-sm md:text-lg hidden sm:block bg-black bg-opacity-50 p-4 rounded-md">

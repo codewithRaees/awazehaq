@@ -34,12 +34,12 @@ const Card = () => {
         {cardData.map((card) => (
           <div
             key={card.id}
-            className=" max-w-80 border-t-0   border-[#676838]   rounded shadow transform hover:scale-110 cursor-pointer hover:shadow-lg transition"
+            className=" max-w-80 border-t-0 mb-[3px]   border-[#676838]   rounded shadow transform hover:scale-110 cursor-pointer hover:shadow-lg transition"
           >
             <img
               src={card.image}
               alt="Card"
-              className=" h-48 w-full object-cover rounded-t-lg"
+              className=" h-48 w-full object-cover rounded-t-lg mb-[1px]"
             />
             <div className="p-4 bg-[#676838] rounded-b-lg flex flex-col items-center">
               {/* Heading */}
