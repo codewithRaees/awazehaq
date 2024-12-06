@@ -70,7 +70,7 @@ const Supporters = () => {
           >
             <div className="Test hover:scale-95 duration-300 transition-all md:w-72 w-48 ">
               <div className="w-auto h-auto relative rounded-xl overflow-hidden">
-                <img src="/images/rais.jpg" alt="Supporter Image" className='object-contain w-full h-full' />
+                <img src={`/images/${supporter.image}`} alt="Supporter Image" className=' w-full h-96 object-cover' />
                 <div className="inset-0 bg-gradient-to-t from-black/60 to-transparent heading absolute">
                  
                 </div>

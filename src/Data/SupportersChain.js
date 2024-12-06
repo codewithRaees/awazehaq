@@ -5,47 +5,47 @@ const SupportersChain = [
         "profession":"profession Title"
     },
     {
-        "image": "5fe4444a065b60c4fe39ef975222c12b.jpg",
+        "image": "s2.jpg",
         "name": "XyZ",
         "profession":"profession Title"
     },
     {
-        "image": "rais.jpg",
+        "image": "s1.jpg",
         "name": "XyZ",
         "profession":"profession Title"
     },
     {
-        "image": "rais.jpg",
+        "image": "s1.jpg",
         "name": "XyZ",
         "profession":"profession Title"
     },
     {
-        "image": "rais.jpg",
+        "image": "s2.jpg",
         "name": "XyZ",
         "profession":"profession Title"
     },
     {
-        "image": "rais.jpg",
+        "image": "s3.jpg",
         "name": "XyZ",
         "profession":"profession Title"
     },
     {
-        "image": "rais.jpg",
+        "image": "s4.jpg",
         "name": "XyZ",
         "profession":"profession Title"
     },
     {
-        "image": "rais.jpg",
+        "image": "s1.jpg",
         "name": "XyZ",
         "profession":"profession Title"
     },
     {
-        "image": "rais.jpg",
+        "image": "s4.jpg",
         "name": "XyZ",
         "profession":"profession Title"
     },
     {
-        "image": "rais.jpg",
+        "image": "s2.jpg",
         "name": "XyZ",
         "profession":"profession Title"
     }
