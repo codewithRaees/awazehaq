@@ -7,6 +7,7 @@ import WhoAndOurMission from "./components/WhoAndOurMission"
 import Card from "./Card"
 // import WhoAndOurMission from "./components/WhoAndOurMission"
 import Supporters from "./components/Supporters"
+import Footer from "./components/Footer"
 
 
 function App() {
@@ -15,6 +16,7 @@ const [navLinks , setnavLinks]=useState(['Home', 'About', 'Our Approach', 'Galle
 
   return (
     <>
+    
       <SocialLinksStrip/>
      
          <Header navLinks={ navLinks} />
@@ -27,7 +29,7 @@ const [navLinks , setnavLinks]=useState(['Home', 'About', 'Our Approach', 'Galle
       
         <Supporters />
      
-      
+        <Footer/>
       
     </>
   )
