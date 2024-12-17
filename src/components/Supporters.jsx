@@ -11,9 +11,9 @@ const Supporters = () => {
  
 
   useEffect(() => {
-    fetch("https://raw.githubusercontent.com/yourusername/repository/main/SupportersChain.js")
+    fetch("https://raw.githubusercontent.com/codewithRaees/awazehaq/SupportersChain.js")
       .then((response) => response.json())
-      .then((data) =>  console.log(data))
+      .then((data) =>  setData(data))
       .catch((error) => console.error("Error fetching data:", error));
   }, []);
    console.log(data)
