@@ -7,16 +7,10 @@ const Supporters = () => {
   
   const [slide, setSlide] = useState(0);
   const [direction, setDirection] = useState(1); // 1: forward, -1: backward
-  const [data, setData] = useState([]);
- 
+  
 
-  useEffect(() => {
-    fetch("https://raw.githubusercontent.com/codewithRaees/awazehaq/SupportersChain.js")
-      .then((response) => response.json())
-      .then((data) =>  setData(data))
-      .catch((error) => console.error("Error fetching data:", error));
-  }, []);
-   console.log(data)
+
+  
   // Update slide to next or previous based on direction
   const nextslide = () => {
     if (SupportersChain.length - 3 === slide) {
@@ -50,10 +44,7 @@ const Supporters = () => {
 
   return (
     <div className='max-w-screen-lg mx-auto py-5 flex flex-col px-3 md:px-0'>
-      <div>
-      <h1>Content Management</h1>
      
-    </div>
       <div className="sliderTop flex justify-between px-1 py-5 items-center">
         <h1 className='text-xl md:text-2xl font-extrabold '>Our Supporters & Contributers</h1>
         <div className="arrows flex gap-3 duration-300">
@@ -74,7 +65,7 @@ const Supporters = () => {
      
       <div className="card-main flex overflow-hidden justify-start">
         {/* Start of Card */}
-        {data.map((supporter, index) => (
+        {SupportersChain.map((supporter, index) => (
           
           <div
             key={index}
