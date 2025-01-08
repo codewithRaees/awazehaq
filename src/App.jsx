@@ -1,35 +1,18 @@
-import { useState } from "react"
-import Header from "./components/Header"
-import SocialLinksStrip from "./components/SocialLinksStrip"
-import CarousalSlider from "./components/CarousalSlider"
-import WhoAndOurMission from "./components/WhoAndOurMission"
 
-import Card from "./Card"
-// import WhoAndOurMission from "./components/WhoAndOurMission"
-import Supporters from "./components/Supporters"
-import Footer from "./components/Footer"
+import { Outlet } from "react-router-dom"
+import Header from "./components/Header"
+import { useState } from "react"
 
 
 function App() {
+
 const [navLinks , setnavLinks]=useState(['Home', 'About', 'Our Approach', 'Gallery', 'On Going Project', 'Volunteer', 'Media'])
  
-
   return (
     <>
-    
-      <SocialLinksStrip/>
+        <Header navLinks={ navLinks} />
+    <Outlet/>
      
-         <Header navLinks={ navLinks} />
-      {/* <Slider /> */}
-     
-        <CarousalSlider />
-        <Card />
-       <WhoAndOurMission/>
-      
-      
-        <Supporters />
-     
-        <Footer/>
       
     </>
   )
