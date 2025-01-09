@@ -3,22 +3,25 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App'
 import AboutUs from './components/AboutUs'
-
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { Home } from './components/Home'
+import { ErrorPage } from './components/ErrorPage'
+
 
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
+    errorElement:<ErrorPage/>,
     children: [
      {
     path: '/',
-    element:<Home/>
+        element: <Home />,
+    
   },
       {
-    path: '/aboutus',
+    path: '/about',
     element:<AboutUs/>
   }
     ]

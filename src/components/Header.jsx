@@ -1,8 +1,9 @@
 import logo from '/assets/logo.jpeg';
-// src/App.js
+
 import React, { act, useState } from "react";
 import styled, { keyframes } from "styled-components";
 import HamburgerMenu from './HamburgerMenu';
+import { Link, useLocation } from 'react-router-dom';
 
 // Define the blink animation
 const blinkAnimation = keyframes`
@@ -34,16 +35,18 @@ const BlinkingButton = styled.button`
   
 
 const Header = ({navLinks}) => {
-const [activeLink, setActiveLink] = useState('Home');
+// const [activeLink, setActiveLink] = useState('Home');
  
    const [isOpen, setIsOpen] = useState(false);
+ const location = useLocation();
+  const [activeLink, setActiveLink] = useState(location.pathname);
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
   };
    // Function to handle link clicks and set the active link
   const handleLinkClick = (link) => {
-    setActiveLink(link);
+    setActiveLink(link.path);
   };
     return (
         <div className="w-full shadow-lg sticky top-0 z-10 bg-white">
@@ -56,10 +59,20 @@ const [activeLink, setActiveLink] = useState('Home');
                     <nav className='hidden custom-md:block'>
         <ul className="flex justify-around gap-2 text-[#333333] text-[14px] font-semibold">
                 {
-                  navLinks.map((link, i) => (
-                    <li key={i} onClick={() => handleLinkClick(link)} className={`hover:bg-[#676838] hover:text-white rounded-full px-3 py-2  transition-all duration-300 ease-in-out `}><a href='#' className={`${activeLink === link ? 'border-b-4 border-[#676838]' : ''}`} >{link}</a></li>
-           
-                  ))
+                 navLinks.map((link, i) => (
+  <li 
+    key={i} 
+    onClick={() => handleLinkClick(link)} 
+    className={`hover:bg-[#676838] hover:text-white rounded-full px-3 py-2 transition-all duration-300 ease-in-out`}
+  >
+    <Link 
+      to={link.path} 
+      className={`${activeLink === link ? 'border-b-4 border-[#676838]' : ''}`}
+    >
+      {link.label}
+    </Link>
+  </li>
+))
           }
                       </ul>
                 </nav>
@@ -80,5 +93,6 @@ const [activeLink, setActiveLink] = useState('Home');
     
   )
 }
+
 
 export default Header
