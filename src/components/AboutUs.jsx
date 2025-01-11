@@ -3,7 +3,7 @@ function AboutUs() {
     <div className="about-container flex    max-w-screen-lg mx-auto py-5  pt-10 md:px-0">
       {/* Content Section */}
       <div className="content w-3/4">
-        <h1 className="text-4xl font-bold mb-4">About Us</h1>
+        <h1 className="text-4xl font-bold mb-4">CEO Message</h1>
         <p className="text-lg mb-6 justify-around">
           Awaz-e-Haq Foundation is a non-profit organization dedicated to creating a brighter and more equitable future by focusing on education, agriculture, and poverty alleviation. Founded with a vision to empower communities, we strive to bridge the gaps in society through sustainable initiatives and grassroots-level impact.
         </p>

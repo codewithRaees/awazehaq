@@ -6,6 +6,7 @@ import AboutUs from './components/AboutUs'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { Home } from './components/Home'
 import { ErrorPage } from './components/ErrorPage'
+import PhotoGallery from './components/PhotoGallery '
 
 
 
@@ -23,6 +24,11 @@ const router = createBrowserRouter([
       {
     path: '/about',
     element:<AboutUs/>
+      }
+      ,
+      {
+    path: '/gallery',
+    element:<PhotoGallery/>
   }
     ]
   },

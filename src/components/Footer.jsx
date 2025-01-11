@@ -1,8 +1,6 @@
 import { FaFacebookF } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa";
 import { TfiYoutube } from "react-icons/tfi";
-import { MdEmail } from "react-icons/md";
-import { BsWhatsapp } from "react-icons/bs";
 const Footer = () => {
   return (
       <div className='  w-full bg-[#676838] h-14 flex justify-between px-5 sm:px-10 items-center relative'>
