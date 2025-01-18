@@ -11,7 +11,7 @@ const [navLinks , setnavLinks]=useState([{ path: '/', label: 'Home' },
   { path: '/about', label: 'About' },
   { path: '/ourapproach', label: 'Our Approach' },
 {path: '/gallery', label: 'Gallery' },
-{path: '/ongoingproject', label: 'On Going Project' },
+{path: '/ongoinprojects', label: 'On Going Project' },
 {path: '/volunteer', label: 'Volunteer' },
 {path: '/media', label: 'Media' }])
  

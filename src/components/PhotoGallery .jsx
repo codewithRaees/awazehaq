@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { IoIosCloseCircle } from "react-icons/io";
 const photos = [
-  { id: 1, src: "https://media.istockphoto.com/id/1175573811/photo/smiling-teenage-boy-with-school-bag-in-front-of-school.jpg?s=1024x1024&w=is&k=20&c=px1Zz4p5x9aiwSpiL75uyIxfy8_ffQqbjBGgA2jgraI=", alt: "Photo 1" , info:"Eduction Activity "},
-  { id: 2, src: "https://media.istockphoto.com/id/1175573811/photo/smiling-teenage-boy-with-school-bag-in-front-of-school.jpg?s=1024x1024&w=is&k=20&c=px1Zz4p5x9aiwSpiL75uyIxfy8_ffQqbjBGgA2jgraI=", alt: "Photo 2" , info:"Agriculture Activity "},
-  { id: 3, src: "https://media.istockphoto.com/id/1175573811/photo/smiling-teenage-boy-with-school-bag-in-front-of-school.jpg?s=1024x1024&w=is&k=20&c=px1Zz4p5x9aiwSpiL75uyIxfy8_ffQqbjBGgA2jgraI=", alt: "Photo 3", info:"Agriculture Activity " },
-  { id: 4, src: "https://media.istockphoto.com/id/2160439321/photo/proud-multiethnic-schoolboy-smiling-at-elementary-school.jpg?s=1024x1024&w=is&k=20&c=EidMJFN3I3r2PnIhoZ9OIJXHMdPe4gcoCM3GsYiQQgk=", alt: "Photo 4", info:"Eduction Activity " },
-  { id: 5, src: "https://media.istockphoto.com/id/1757822589/photo/close-up-portrait-of-a-cute-smiling-boy-at-home.jpg?s=1024x1024&w=is&k=20&c=tyDB3etB9gE9nijHh_-foEdVKXKdoSHK502VbXVePzw=", alt: "Photo 5", info:"Donation Activity " },
-  { id: 6, src: "https://cdn.pixabay.com/photo/2014/03/12/18/45/boys-286245_960_720.jpg", alt: "Photo 6", info:"Eduction Activity " },
+  { id: 1, src: "https://media.istockphoto.com/id/1175573811/photo/smiling-teenage-boy-with-school-bag-in-front-of-school.jpg?s=1024x1024&w=is&k=20&c=px1Zz4p5x9aiwSpiL75uyIxfy8_ffQqbjBGgA2jgraI=", alt: "Photo 1" , title:"Eduction Activity " ,detail:"lorem40lorem40lorem40lorem40lorem40lorem40lorem40lorem40lorem40lorem40lorem40"},
+  { id: 2, src: "https://media.istockphoto.com/id/1175573811/photo/smiling-teenage-boy-with-school-bag-in-front-of-school.jpg?s=1024x1024&w=is&k=20&c=px1Zz4p5x9aiwSpiL75uyIxfy8_ffQqbjBGgA2jgraI=", alt: "Photo 2" , title:"Agriculture Activity ",detail:"lorem40lorem40lorem40lorem40lorem40lorem40lorem40lorem40lorem40lorem40lorem40"},
+  { id: 3, src: "https://media.istockphoto.com/id/1175573811/photo/smiling-teenage-boy-with-school-bag-in-front-of-school.jpg?s=1024x1024&w=is&k=20&c=px1Zz4p5x9aiwSpiL75uyIxfy8_ffQqbjBGgA2jgraI=", alt: "Photo 3", title:"Agriculture Activity ",detail:"lorem40lorem40lorem40lorem40lorem40lorem40lorem40lorem40lorem40lorem40lorem40" },
+  { id: 4, src: "https://media.istockphoto.com/id/2160439321/photo/proud-multiethnic-schoolboy-smiling-at-elementary-school.jpg?s=1024x1024&w=is&k=20&c=EidMJFN3I3r2PnIhoZ9OIJXHMdPe4gcoCM3GsYiQQgk=", alt: "Photo 4", title:"Eduction Activity " ,detail:"lorem40lorem40lorem40lorem40lorem40lorem40lorem40lorem40lorem40lorem40lorem40" },
+  { id: 5, src: "https://media.istockphoto.com/id/1757822589/photo/close-up-portrait-of-a-cute-smiling-boy-at-home.jpg?s=1024x1024&w=is&k=20&c=tyDB3etB9gE9nijHh_-foEdVKXKdoSHK502VbXVePzw=", alt: "Photo 5", title:"Donation Activity " ,detail:"lorem40lorem40lorem40lorem40lorem40lorem40lorem40lorem40lorem40lorem40lorem40" },
+  { id: 6, src: "https://cdn.pixabay.com/photo/2014/03/12/18/45/boys-286245_960_720.jpg", alt: "Photo 6", title:"Eduction Activity " ,detail:"lorem40lorem40lorem40lorem40lorem40lorem40lorem40lorem40lorem40lorem40lorem40" },
 ];
 
 const PhotoGallery = () => {
@@ -61,9 +61,9 @@ const PhotoGallery = () => {
                 <IoIosCloseCircle/>
                           </button></div>
                       
-            <div className="p-2 flex justify-left items-center bg-black text-white">
-              <span className="text-base font-bold">{selectedPhoto.info}: </span>
-              <p className="text-sm font-semibold px-2">{selectedPhoto.info}</p>
+            <div className="p-3 flex justify-start flex-col flex-wrap bg-black text-white ">
+              <span className="text-base font-bold">{selectedPhoto.title}: </span>
+               <p className="text-sm   ">{selectedPhoto.title}</p>
             </div>
           </div>
         </div>

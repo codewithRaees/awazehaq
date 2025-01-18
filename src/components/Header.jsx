@@ -67,7 +67,7 @@ const Header = ({navLinks}) => {
   >
     <Link 
       to={link.path} 
-      className={`${activeLink === link ? 'border-b-4 border-[#676838]' : ''}`}
+      className={`${activeLink === link.path ? 'border-b-4 border-[#676838]' : ''}`}
     >
       {link.label}
     </Link>

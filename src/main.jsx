@@ -7,6 +7,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { Home } from './components/Home'
 import { ErrorPage } from './components/ErrorPage'
 import PhotoGallery from './components/PhotoGallery '
+import LearnMore from './components/LearnMore'
+import OnGoingProjects from './components/OngoingProjects'
 
 
 
@@ -29,6 +31,14 @@ const router = createBrowserRouter([
       {
     path: '/gallery',
     element:<PhotoGallery/>
+      },
+      {
+            path: "/ongoinprojects",
+            element:< OnGoingProjects />
+      },
+          {
+            path: "/learnmore/:id",
+            element:< LearnMore />
   }
     ]
   },
