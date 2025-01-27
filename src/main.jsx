@@ -9,6 +9,7 @@ import { ErrorPage } from './components/ErrorPage'
 import PhotoGallery from './components/PhotoGallery '
 import LearnMore from './components/LearnMore'
 import OnGoingProjects from './components/OngoingProjects'
+import OurApproach from './components/OurApproach'
 
 
 
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
       {
             path: "/ongoinprojects",
             element:< OnGoingProjects />
+      },
+       {
+            path: "/ourapproach",
+            element:< OurApproach />
       },
           {
             path: "/learnmore/:id",

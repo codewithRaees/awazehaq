@@ -41,8 +41,8 @@ const LearnMore = () => {
       </div>
 
       {/* Additional Text Expansion (Visible only if text exceeds the image height) */}
-      <div className="lg:hidden mt-8">
-        <p className="text-gray-700 leading-relaxed">{project.details}</p>
+      <div className="lg:hidden mt-8 ">
+        <p className="text-gray-700 leading-relaxed tracking-wide">{project.details}</p>
       </div>
     </div>
   );

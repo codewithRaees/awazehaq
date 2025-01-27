@@ -11,7 +11,7 @@ const Card = () => {
     },
     {
       id: 2,
-      image: '/assets/s1.png',
+      image: '/assets/s5.jpeg',
       heading: 'Agriculture',
       text: 'This is a short description of the card content. It gives a brief overview of the topic.',
       link: '/read-more', // Replace with your target URL

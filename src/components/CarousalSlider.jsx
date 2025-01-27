@@ -9,14 +9,28 @@ const CarousalSlider = () => {
         'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, corporis natus nisi possimus harum magnam similique, fugit dolore explicabo debitis et! Modi ad minus placeat excepturi, fugiat labore alias ipsum.',
     },
     {
+      image: '/assets/s4.jpeg',
+      heading: 'Gomal Agriculture project',
+      paragraph:
+        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, corporis natus nisi possimus harum magnam similique, fugit dolore explicabo debitis et! Modi ad minus placeat excepturi, fugiat labore alias ipsum.',
+    },
+     {
+      image: '/assets/s5.jpeg',
+      heading: 'Gomal Agriculture project',
+      paragraph:
+        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, corporis natus nisi possimus harum magnam similique, fugit dolore explicabo debitis et! Modi ad minus placeat excepturi, fugiat labore alias ipsum.',
+    },
+    {
       image: '/assets/s2.jpeg',
-      heading: 'Heading 2',
-      paragraph: 'This is the description for the second slide.',
+      heading: 'Gomal Agriculture project',
+      paragraph: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, corporis natus nisi possimus harum magnam similique, fugit dolore explicabo debitis et! Modi ad minus placeat excepturi, fugiat labore alias ipsum.',
+    
     },
     {
       image: '/assets/s3.png',
-      heading: 'Heading 3',
-      paragraph: 'This is the description for the third slide.',
+      heading: 'Ramazan Donation',
+      paragraph: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, corporis natus nisi possimus harum magnam similique, fugit dolore explicabo debitis et! Modi ad minus placeat excepturi, fugiat labore alias ipsum.',
+    
     },
   ];
 
