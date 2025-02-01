@@ -203,5 +203,5 @@ const data = {
   ],
   ceoMessage: "We are committed to making a positive impact in every community we serve.",
 };
-
+  
 export default data;

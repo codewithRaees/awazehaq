@@ -20,7 +20,8 @@ const [navLinks , setnavLinks]=useState([{ path: '/', label: 'Home' },
         <Header navLinks={ navLinks} />
         <Outlet/>
         <Footer/>
-      
+       
+                
     </>
   )
 }

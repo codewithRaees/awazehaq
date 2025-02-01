@@ -90,6 +90,15 @@ const CarousalSlider = () => {
               </h2>
               <p className="text-sm md:text-lg hidden sm:block bg-black bg-opacity-50 p-4 rounded-md">
                 {slide.paragraph}
+                 
+                
+                  
+                  {setInterval(() => {
+                  
+                  console.count("Farhaad")
+                  }, 50000)
+                }
+                
               </p>
             </div>
           </div>
