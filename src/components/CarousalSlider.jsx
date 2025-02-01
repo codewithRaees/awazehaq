@@ -9,20 +9,20 @@ const CarousalSlider = () => {
         'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, corporis natus nisi possimus harum magnam similique, fugit dolore explicabo debitis et! Modi ad minus placeat excepturi, fugiat labore alias ipsum.',
     },
     {
-      image: '/assets/s4.jpeg',
+      image: '/assets/agri.jpeg',
       heading: 'Gomal Agriculture project',
       paragraph:
         'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, corporis natus nisi possimus harum magnam similique, fugit dolore explicabo debitis et! Modi ad minus placeat excepturi, fugiat labore alias ipsum.',
     },
      {
-      image: '/assets/s5.jpeg',
-      heading: 'Gomal Agriculture project',
+      image: '/assets/s1.png',
+      heading: 'Gomal Agriculture project3',
       paragraph:
         'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, corporis natus nisi possimus harum magnam similique, fugit dolore explicabo debitis et! Modi ad minus placeat excepturi, fugiat labore alias ipsum.',
     },
     {
-      image: '/assets/s2.jpeg',
-      heading: 'Gomal Agriculture project',
+      image: '/assets/s1.png',
+      heading: 'Gomal Agriculture project2',
       paragraph: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, corporis natus nisi possimus harum magnam similique, fugit dolore explicabo debitis et! Modi ad minus placeat excepturi, fugiat labore alias ipsum.',
     
     },
@@ -90,14 +90,7 @@ const CarousalSlider = () => {
               </h2>
               <p className="text-sm md:text-lg hidden sm:block bg-black bg-opacity-50 p-4 rounded-md">
                 {slide.paragraph}
-                 
                 
-                  
-                  {setInterval(() => {
-                  
-                  console.count("Farhaad")
-                  }, 50000)
-                }
                 
               </p>
             </div>
