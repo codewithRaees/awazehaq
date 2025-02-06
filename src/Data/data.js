@@ -147,6 +147,38 @@ const data = {
       "Our journey is only possible because of the support of individuals like you. Together, we can create a future where education, agriculture, and social welfare go hand in hand, building stronger, more resilient communities.",
     points: [],
   },
+  ],
+   slides : [
+  {
+    image: '/assets/s1.png',
+    heading: 'Improve Rural Education',
+    paragraph:
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, corporis natus nisi possimus harum magnam similique, fugit dolore explicabo debitis et! Modi ad minus placeat excepturi, fugiat labore alias ipsum.',
+  },
+  {
+    image: '/assets/agri.jpeg',
+    heading: 'Gomal Agriculture Project',
+    paragraph:
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, corporis natus nisi possimus harum magnam similique, fugit dolore explicabo debitis et! Modi ad minus placeat excepturi, fugiat labore alias ipsum.',
+  },
+  {
+    image: '/assets/s1.png',
+    heading: 'Gomal Agriculture Project 3',
+    paragraph:
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, corporis natus nisi possimus harum magnam similique, fugit dolore explicabo debitis et! Modi ad minus placeat excepturi, fugiat labore alias ipsum.',
+  },
+  {
+    image: '/assets/s1.png',
+    heading: 'Gomal Agriculture Project 2',
+    paragraph:
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, corporis natus nisi possimus harum magnam similique, fugit dolore explicabo debitis et! Modi ad minus placeat excepturi, fugiat labore alias ipsum.',
+  },
+  {
+    image: '/assets/s3.png',
+    heading: 'Ramazan Donation',
+    paragraph:
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, corporis natus nisi possimus harum magnam similique, fugit dolore explicabo debitis et! Modi ad minus placeat excepturi, fugiat labore alias ipsum.',
+  },
 ],
   ourApproach : [
   { id: 1, src: "https://media.istockphoto.com/id/1175573811/photo/smiling-teenage-boy-with-school-bag-in-front-of-school.jpg?s=1024x1024&w=is&k=20&c=px1Zz4p5x9aiwSpiL75uyIxfy8_ffQqbjBGgA2jgraI=", alt: "Photo 1", title: "Education Activity", detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." },
