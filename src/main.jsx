@@ -8,9 +8,9 @@ import { Home } from './components/Home'
 import { ErrorPage } from './components/ErrorPage'
 import PhotoGallery from './components/PhotoGallery '
 import LearnMore from './components/LearnMore'
-import OnGoingProjects from './components/OngoingProjects'
 import OurApproach from './components/OurApproach'
 import DonateNow from './components/DonateNow'
+import OnGoingProjects from './components/OnGoingProjects'
 
 
 
@@ -24,7 +24,7 @@ const router = createBrowserRouter([
     path: '/',
         element: <Home />,
     
-  },
+      },
       {
     path: '/about',
     element:<AboutUs/>
@@ -36,7 +36,7 @@ const router = createBrowserRouter([
       },
       {
             path: "/ongoinprojects",
-            element:< OnGoingProjects />
+            element:<OnGoingProjects/>
       },
        {
             path: "/ourapproach",
