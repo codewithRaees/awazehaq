@@ -62,7 +62,8 @@ const Header = ({ navLinks }) => {
         <div className="header-left flex justify-around items-center sm:gap-5">
           <nav className="hidden custom-md:block">
             <ul className="flex justify-around gap-2 text-[#333333] text-[14px] font-semibold">
-              {navLinks.map((link, i) => (
+              {navLinks.filter((link)=> link.label != 'Donate Now')
+                .map((link, i) => (
                 <li
                   key={i}
                   onClick={() => handleLinkClick(link)}
