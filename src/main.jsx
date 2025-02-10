@@ -10,6 +10,7 @@ import PhotoGallery from './components/PhotoGallery '
 import LearnMore from './components/LearnMore'
 import OnGoingProjects from './components/OngoingProjects'
 import OurApproach from './components/OurApproach'
+import DonateNow from './components/DonateNow'
 
 
 
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
        {
             path: "/ourapproach",
             element:< OurApproach />
+      },
+      {
+            path: "/donatenow",
+            element:< DonateNow />
       },
           {
             path: "/learnmore/:id",
