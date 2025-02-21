@@ -95,7 +95,7 @@ const Header = ({ navLinks }) => {
             <button onClick={toggleMenu} className="block custom-md:hidden pl-2 sm:pl-4 text-3xl text-[#6d6d23] rounded">
               ☰
             </button>
-            <HamburgerMenu isOpen={isOpen} onClose={toggleMenu} />
+            <HamburgerMenu isOpen={isOpen} onClose={toggleMenu} navLinks={navLinks} activeLink={activeLink} handleLinkClick={handleLinkClick} />
           </div>
         </div>
       </header>
