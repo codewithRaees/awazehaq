@@ -3,7 +3,7 @@ import { IoIosCloseCircle } from "react-icons/io";
 import data from "../Data/data.js";
 
 const PhotoGallery = () => {
-   const { photos } = data;
+  const { photos } = data;
   const [selectedPhoto, setSelectedPhoto] = useState(null);
 
   const openModal = (photo) => {
@@ -17,6 +17,7 @@ const PhotoGallery = () => {
   return (
     <div className="p-6">
       <h1 className="text-3xl font-bold text-center mb-6">Photo Gallery</h1>
+
       {/* Gallery Grid */}
       <div className="relative grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {photos.map((photo) => (
@@ -28,7 +29,7 @@ const PhotoGallery = () => {
             <img
               src={photo.src}
               alt={photo.alt}
-              className="rounded-t-lg shadow-lg transition-transform transform group-hover:scale-105"
+              className="w-full h-48 object-cover object-center rounded-t-lg shadow-lg transition-transform transform group-hover:scale-105"
             />
             <div className="group bottom-1 py-2 rounded-b-lg bg-black w-full text-white transition-transform transform group-hover:scale-105">
               <h3 className="px-2">Awaz-e-Haq Foundation</h3>
@@ -47,7 +48,11 @@ const PhotoGallery = () => {
             className="bg-white rounded-lg overflow-hidden shadow-lg max-w-xl relative w-full"
             onClick={(e) => e.stopPropagation()}
           >
-            <img src={selectedPhoto.src} alt={selectedPhoto.alt} className="w-full" />
+            <img
+              src={selectedPhoto.src}
+              alt={selectedPhoto.alt}
+              className="w-full object-cover"
+            />
             <div className="absolute top-2 right-3">
               <button
                 onClick={closeModal}

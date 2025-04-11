@@ -17,9 +17,9 @@ const SocialLinksStrip = () => {
       <div className="right flex text-white items-center gap-10 text-[14px]">
         
               <div className="hidden sm:block ">
-                  <div className="email flex  items-center gap-2"><MdEmail/><span>example@gmail.com</span></div>
+                  <div className="email flex  items-center gap-2"><MdEmail/><span>ahfg@gmail.com</span></div>
               </div>
-              <div className="whatsapp flex items-center  gap-2"><BsWhatsapp/><span>+92-000-0000000</span></div>
+              <div className="whatsapp flex items-center  gap-2"><BsWhatsapp/><span>+92-346-9290697</span></div>
           </div>
     </div>
   )
